@@ -98,6 +98,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -109,8 +113,6 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  /* overflow-y: hidden;
-  overflow-x: hidden; */
 }
 
 hr {
@@ -721,6 +723,7 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 2em;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
@@ -3934,7 +3937,7 @@ fieldset:disabled .btn {
 }
 .overflow-auto {
   height: calc(100vh - 35vh);
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 .overflow-auto1 {
   height: calc(100vh - 50vh);
@@ -11352,11 +11355,13 @@ h1.mt-4 {
 }
 
 .btn-toggle {
-  background-color: #000;
+  background-color: transparent;
   color: #ffffff;
   border: none;
   margin: 2em 0em 0em 0em;
+  padding: 0.5em 1em 0.5em 1em;
   border-radius: 5px;
+  box-shadow: 0 10px 25px #000;
 }
 
 #sidebar-wrapper {
@@ -11364,16 +11369,15 @@ h1.mt-4 {
   margin-left: -15rem;
   transition: margin 0.5s ease-out;
   padding: 2em 2em 2em 2em;
-  background-color: #001f3f;
   /* border-radius: 10px; */
 }
 
 #sidebar-wrapper .sidebar-heading {
-  padding: 0.875rem 1.25rem;
+  padding: 2rem 2rem;
   font-size: 1.2rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 #sidebar-wrapper .sidebar-heading .logo {
@@ -11382,9 +11386,10 @@ h1.mt-4 {
 }
 
 #sidebar-wrapper .sidebar-links {
-  min-height: calc(100vh - 18vh);
-  background-color: #000;
-  border-radius: 0px 0px 10px 10px;
+  min-height: calc(100vh - 10vh);
+  /* background-color: #000; */
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 10px 25px #000;
 }
 
 #sidebar-wrapper .list-group {
@@ -11463,7 +11468,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .skills .skill p {
   color: #3b3b3b;
   font-weight: bold;
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.3em 1em 0.5em 1em;
   border-radius: 20px;
   background: linear-gradient(#edbbba, #edbbba, #edbbba);
   box-shadow: 1px 1px 100px #000, -5px -5px 100px #edbbba;
@@ -11491,9 +11496,6 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   color: #edbbba;
   font-size: 15px;
   font-weight: bold;
-}
-
-.experiences {
 }
 
 .experiences .experience {
@@ -11585,4 +11587,172 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border-radius: 20px;
   font-size: 13px;
   padding: 0.2em 1em 0.3em 1em;
+}
+
+.social-icon-list {
+  display: flex;
+  overflow: auto;
+  justify-content: start;
+  align-items: start;
+  margin-left: -0.5em;
+  margin-top: 1.5em;
+}
+
+.social-icon-list ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.social-icon-list ul li a {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  box-shadow: 0 10px 25px #000;
+}
+
+.social-icon-list ul li a:hover {
+  width: 180px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+.social-icon-list ul li a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.social-icon-list ul li a:hover::before {
+  opacity: 1;
+}
+
+.social-icon-list ul li a::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.social-icon-list ul li a:hover::after {
+  opacity: 0.5;
+}
+
+.social-icon-list ul li i {
+  color: #fff;
+  font-size: 1.7em !important;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+.social-icon-list ul li a:hover i {
+  transform: scale(0);
+  font-size: 1.75em;
+  transition-delay: 0.25s;
+}
+
+.social-icon-list ul li span {
+  position: absolute;
+}
+
+.social-icon-list ul li .titulo {
+  color: #fff;
+  font-size: 1.3em !important;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.1em;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.social-icon-list ul li a:hover .titulo {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
+
+.row-flip-card {
+  justify-content: center;
+  align-items: center;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 320px;
+  height: 260px;
+  padding: 1.5em 2em 1.5em 2em;
+  border-radius: 20px;
+  cursor: pointer;
+  /* border: 1px solid #edbbba; */
+  box-shadow: 0 10px 25px #000;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  padding: 2em 0em 0em 0em;
+}
+
+.flip-card-front h1 {
+  color: white;
+  font-size: 18px;
+  margin-top: 1.1em;
+}
+
+.flip-card-front i {
+  color: white;
+  font-size: 60px;
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  text-align: justify;
 }
