@@ -3827,9 +3827,7 @@ fieldset:disabled .btn {
   --bs-nav-pills-link-active-color: #001f3f3;
   --bs-nav-pills-link-active-bg: #edbbba;
   font-weight: bold;
-  padding-left: 1em;
   align-items: start;
-  padding-top: 4em;
 }
 .nav-pills .nav-link {
   background: none;
@@ -3921,6 +3919,11 @@ fieldset:disabled .btn {
   margin-top: 1em;
   gap: 2em;
 }
+
+.profile .img img {
+  border: 4px solid #edbbba;
+}
+
 .profile .greating {
   font-size: 16px;
 }
@@ -3936,34 +3939,45 @@ fieldset:disabled .btn {
   margin-top: -0.5em;
 }
 .overflow-auto {
-  height: calc(100vh - 35vh);
+  height: calc(100vh - 22vh);
   margin-top: 0.5em;
-}
-.overflow-auto1 {
-  height: calc(100vh - 50vh);
-  overflow: auto !important;
 }
 
 .overflow-auto p {
   text-align: justify;
 }
 
-.overflow-auto1::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
 .overflow-auto1 {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  height: calc(100vh - 50vh);
+  overflow: auto !important;
 }
 
-.overflow-auto::-webkit-scrollbar {
+.overflow-auto2 {
+  height: calc(100vh - 20vh);
+  overflow: auto !important;
+}
+
+.overflow-auto3 {
+  height: calc(100vh - 30vh);
+  overflow: auto !important;
+}
+
+.overflow-auto4 {
+  height: calc(100vh - 35vh);
+  overflow: auto !important;
+}
+
+.overflow-auto::-webkit-scrollbar,
+.overflow-auto1::-webkit-scrollbar,
+.overflow-auto2::-webkit-scrollbar,
+.overflow-auto3::-webkit-scrollbar,
+.overflow-auto4::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.overflow-auto {
+.overflow-auto, .overflow-auto1, .overflow-auto2,
+.overflow-auto3, .overflow-auto4 {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -11403,7 +11417,8 @@ h1.mt-4 {
 
 #page-content-wrapper {
   min-width: 100vw;
-  padding: 0 1em 2em 1em;
+  padding: 0 1.5em 2em 0;
+
 }
 
 body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
@@ -11511,13 +11526,14 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .experiences .experience h1 > span {
-  font-size: 18px;
+  font-size: 15px;
+  color: #edbbba;
 }
 
 .experiences .experience .title {
   margin-top: -0.8em;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .experiences .experience .date {
@@ -11707,11 +11723,79 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
+.p-card-title {
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.p-card-title span{
+  font-size: 10px;
+  float: right;
+  color: #edbbba;
+  font-weight: bold;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: -0.3em;
+  cursor: pointer;
+}
+
+.p-descr {
+  margin: 0.5em 0 1em 0;
+  text-align: justify;
+}
+
+.project-links {
+  margin: 1.5em 0 0.5em 0;
+}
+
+.project-link {
+  text-decoration: none;
+  background-color: transparent;
+  box-shadow: 0 10px 25px #000;
+  border-radius: 10px;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: center;
+  margin: 2em 1em 0 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  color: #000;
+  background-color: #edbbba;
+}
+
+.flip-card1 {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5em 2em 0em;
+  margin-top: -2.5em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  /* border: 1px solid #edbbba; */
+  /* box-shadow: 0 10px 25px #000; */
+  perspective: 1000px;
+}
+
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner1 {
+  /* position: relative; */
+  /* width: 100%; */
+  /* height: 100%; */
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -11722,8 +11806,22 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   transform: rotateY(180deg);
 }
 
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
 .flip-card-front {
   padding: 2em 0em 0em 0em;
+}
+
+.flip-card-front1 {
+  padding: 2em 0em 0em 0em;
+}
+
+.flip-card-front1 img {
+  width: 100%;
+  height: 100%;
+
 }
 
 .flip-card-front h1 {
@@ -11748,11 +11846,47 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border-radius: 20px;
 }
 
+.flip-card-front1,
+.flip-card-back1 {
+  position: absolute;
+  /* width: 100%; */
+  /* height: 100%; */
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
 }
 
+.flip-card-back1 {
+  transform: rotateY(180deg);
+  margin-top: 2em;
+}
+
 .flip-card-back p {
   text-align: justify;
+}
+
+.flip-card-back1 p {
+  text-align: justify;
+}
+
+/* Portfolio section */
+
+.nav-portfolio{
+  margin-top: -3em;
+}
+
+.portfolio {
+  margin-top: -4.5em;
+  /* text-align: center; */
+}
+
+.card-projects .card {
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 10px 25px #000;
+  /* width: 20rem; */
 }

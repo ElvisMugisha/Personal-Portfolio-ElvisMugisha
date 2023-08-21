@@ -25,7 +25,7 @@
                     </div>
                     <div class="d-flex align-items-start">
                         <div
-                            class="nav flex-column nav-pills me-3"
+                            class="nav flex-column nav-pills me-3 p-4"
                             id="v-pills-tab"
                             role="tablist"
                             aria-orientation="vertical"
@@ -68,12 +68,12 @@
                             </button>
                             <button
                                 class="nav-link"
-                                id="v-pills-messages-tab"
+                                id="v-pills-portfolio-tab"
                                 data-bs-toggle="pill"
-                                data-bs-target="#v-pills-messages"
+                                data-bs-target="#v-pills-portfolio"
                                 type="button"
                                 role="tab"
-                                aria-controls="v-pills-messages"
+                                aria-controls="v-pills-portfolio"
                                 aria-selected="false"
                             >
                                 Portfolio
@@ -101,733 +101,1108 @@
                         <i class="fa-solid fa-bars-staggered" style="font-size: 25px;"></i>
                     </button>
                 </div>
-            </nav>
-            <!-- Page content-->
-            <div class="container-fluid">
-                <div class="sidebar-links">
-                    <div class="d-flex align-items-start">
-                        <div>
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div
-                                    class="tab-pane fade show active"
-                                    id="v-pills-about"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-about-tab"
-                                    tabindex="0"
-                                >
-                                    <div class="profile">
-                                        <div class="img">
-                                            <img class="img-circle" src="assets/img/ds.jpg" alt="ElvisMugisha">
-                                        </div>
-                                        <div class="profile-info">
-                                            <h1 class="mt-4">
-                                                <p class="greating">Hello, I'm</p>
-                                                <p class="profile-name">ELVIS Mugisha</p>
-                                                <p class="text-color">
-                                                    A
-                                                    <span class="typing-text"></span>
-                                                    <span class="cursor">&nbsp;</span>
-                                                </p>
-                                            </h1>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <div class="overflow-auto">
-                                                <p>
-                                                    I am a highly skilled and dedicated software
-                          developer with a 3+ years of experience and a
-                          passion for building innovative and robust
-                          applications. With expertise in Python, Java, Spring
-                          Boot, Django, Bootstrap, Flutter, REST APIs, MySQL,
-                          AWS, GitHub, and so many more. I possess a universal
-                          skill set that allows me to dive a wide range of
-                          challenges in the software development landscape.
-                                                </p>
-                                                <p>
-                                                    As a lifelong learner, I stay up-to-date of the
-                          latest industry trends and emerging technologies to
-                          continuously enhance my abilities. My academic
-                          background and hands-on experience in software
-                          engineering have honed my problem-solving skills,
-                          attention to detail, and ability to deliver
-                          high-quality solutions
-                                                </p>
-                                                <p>
-                                                    With a keen eye for user experience, I aim to create
-                          intuitive and user-friendly applications that
-                          positively impact end-users. My proficiency in
-                          front-end and back-end development, coupled with my
-                          understanding of RESTful architecture, enables me to
-                          build seamless and scalable applications.
-                                                </p>
-                                                <p>
-                                                    Working both independently and as part of a
-                          collaborative team, I thrive in dynamic
-                          environments, embracing challenges and deadlines
-                          with enthusiasm. My passion for clean and
-                          maintainable code drives me to contribute actively
-                          to GitHub repositories, following best practices and
-                          encouraging code reviews
-                                                </p>
-                                                <div class="social-icon-list">
-                                                    <ul>
-                                                        <li style="--i:#050505;--j:#050505;">
-                                                            <a href="https://github.com/ElvisMugisha" target="_blank">
-                                                                <span class="icon">
-                                                                    <i class="fa-brands fa-github"></i>
-                                                                </span>
-                                                                <span class="titulo">GitHub</span>
-                                                            </a>
-                                                        </li>
-                                                        <li style="--i:#0072b1; --j:#0072b1;">
-                                                            <a href="https://www.linkedin.com/in/elvis-mugisha-a846b1230/" target="_blank">
-                                                                <span class="icon">
-                                                                    <i class="fa-brands fa-linkedin-in"></i>
-                                                                </span>
-                                                                <span class="titulo">LinkedIn</span>
-                                                            </a>
-                                                        </li>
-                                                        <li style="--i:#cd486b; --j:#cd486b;">
-                                                            <a href="https://www.instagram.com/mugisha_elvis1/" target="_blank">
-                                                                <span class="icon">
-                                                                    <i class="fa-brands fa-instagram"></i>
-                                                                </span>
-                                                                <span class="titulo">Instagram</span>
-                                                            </a>
-                                                        </li>
-                                                        <li style="--i:#3b5998; --j:#3b5998;">
-                                                            <a href="https://www.facebook.com/Elvibello10" target="_blank">
-                                                                <span class="icon">
-                                                                    <i class="fa-brands fa-facebook"></i>
-                                                                </span>
-                                                                <span class="titulo">Facebook</span>
-                                                            </a>
-                                                        </li>
-                                                        <li style="--i:#00acee; --j:#00acee;">
-                                                            <a href="https://twitter.com/mugisha_elvis1" target="_blank">
-                                                                <span class="icon">
-                                                                    <i class="fa-brands fa-x-twitter"></i>
-                                                                </span>
-                                                                <span class="titulo">Twitter</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <div class="sidebar-links">
+                        <div class="d-flex align-items-start">
+                            <div>
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div
+                                        class="tab-pane fade show active"
+                                        id="v-pills-about"
+                                        role="tabpanel"
+                                        aria-labelledby="v-pills-about-tab"
+                                        tabindex="0"
+                                    >
+                                        <div class="profile">
+                                            <div class="img">
+                                                <img class="img-circle" src="assets/img/ds.jpg" alt="ElvisMugisha">
+                                            </div>
+                                            <div class="profile-info">
+                                                <h1 class="mt-4">
+                                                    <p class="greating">Hello, I'm</p>
+                                                    <p class="profile-name">ELVIS Mugisha</p>
+                                                    <p class="text-color">
+                                                        A
+                                                        <span class="typing-text"></span>
+                                                        <span class="cursor">&nbsp;</span>
+                                                    </p>
+                                                </h1>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <nav>
-                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                    <button
-                                                        class="nav-link"
-                                                        id="nav-profile-tab"
-                                                        data-bs-toggle="tab"
-                                                        data-bs-target="#nav-profile"
-                                                        type="button"
-                                                        role="tab"
-                                                        aria-controls="nav-profile"
-                                                        aria-selected="false"
-                                                    >
-                                                        Profile
-                                                    </button>
-                                                    <button
-                                                        class="nav-link active"
-                                                        id="nav-skills-tab"
-                                                        data-bs-toggle="tab"
-                                                        data-bs-target="#nav-skills"
-                                                        type="button"
-                                                        role="tab"
-                                                        aria-controls="nav-skills"
-                                                        aria-selected="true"
-                                                    >
-                                                        Skills
-                                                    </button>
-                                                    <button
-                                                        class="nav-link"
-                                                        id="nav-education-tab"
-                                                        data-bs-toggle="tab"
-                                                        data-bs-target="#nav-education"
-                                                        type="button"
-                                                        role="tab"
-                                                        aria-controls="nav-education"
-                                                        aria-selected="false"
-                                                    >
-                                                        Education
-                                                    </button>
-                                                    <button
-                                                        class="nav-link"
-                                                        id="nav-hobbies-tab"
-                                                        data-bs-toggle="tab"
-                                                        data-bs-target="#nav-hobbies"
-                                                        type="button"
-                                                        role="tab"
-                                                        aria-controls="nav-hobbies"
-                                                        aria-selected="false"
-                                                    >
-                                                        Interested
-                                                    </button>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="overflow-auto4">
+                                                    <p>
+                                                        I am a highly skilled and dedicated software
+                                                    developer with a 3+ years of experience and a
+                                                    passion for building innovative and robust
+                                                    applications. With expertise in Python, Java, Spring
+                                                    Boot, Django, Bootstrap, Flutter, REST APIs, MySQL,
+                                                    AWS, GitHub, and so many more. I possess a universal
+                                                    skill set that allows me to dive a wide range of
+                                                    challenges in the software development landscape.
+                                                    </p>
+                                                    <p>
+                                                        As a lifelong learner, I stay up-to-date of the
+                                                    latest industry trends and emerging technologies to
+                                                    continuously enhance my abilities. My academic
+                                                    background and hands-on experience in software
+                                                    engineering have honed my problem-solving skills,
+                                                    attention to detail, and ability to deliver
+                                                    high-quality solutions
+                                                    </p>
+                                                    <p>
+                                                        With a keen eye for user experience, I aim to create
+                                                    intuitive and user-friendly applications that
+                                                    positively impact end-users. My proficiency in
+                                                    front-end and back-end development, coupled with my
+                                                    understanding of RESTful architecture, enables me to
+                                                    build seamless and scalable applications.
+                                                    </p>
+                                                    <p>
+                                                        Working both independently and as part of a
+                                                    collaborative team, I thrive in dynamic
+                                                    environments, embracing challenges and deadlines
+                                                    with enthusiasm. My passion for clean and
+                                                    maintainable code drives me to contribute actively
+                                                    to GitHub repositories, following best practices and
+                                                    encouraging code reviews
+                                                    </p>
+                                                    <div class="social-icon-list">
+                                                        <ul>
+                                                            <li style="--i:#050505;--j:#050505;">
+                                                                <a href="https://github.com/ElvisMugisha" target="_blank">
+                                                                    <span class="icon">
+                                                                        <i class="fa-brands fa-github"></i>
+                                                                    </span>
+                                                                    <span class="titulo">GitHub</span>
+                                                                </a>
+                                                            </li>
+                                                            <li style="--i:#0072b1; --j:#0072b1;">
+                                                                <a href="https://www.linkedin.com/in/elvis-mugisha-a846b1230/" target="_blank">
+                                                                    <span class="icon">
+                                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                                    </span>
+                                                                    <span class="titulo">LinkedIn</span>
+                                                                </a>
+                                                            </li>
+                                                            <li style="--i:#cd486b; --j:#cd486b;">
+                                                                <a href="https://www.instagram.com/mugisha_elvis1/" target="_blank">
+                                                                    <span class="icon">
+                                                                        <i class="fa-brands fa-instagram"></i>
+                                                                    </span>
+                                                                    <span class="titulo">Instagram</span>
+                                                                </a>
+                                                            </li>
+                                                            <li style="--i:#3b5998; --j:#3b5998;">
+                                                                <a href="https://www.facebook.com/Elvibello10" target="_blank">
+                                                                    <span class="icon">
+                                                                        <i class="fa-brands fa-facebook"></i>
+                                                                    </span>
+                                                                    <span class="titulo">Facebook</span>
+                                                                </a>
+                                                            </li>
+                                                            <li style="--i:#00acee; --j:#00acee;">
+                                                                <a href="https://twitter.com/mugisha_elvis1" target="_blank">
+                                                                    <span class="icon">
+                                                                        <i class="fa-brands fa-x-twitter"></i>
+                                                                    </span>
+                                                                    <span class="titulo">Twitter</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </nav>
-                                            <div class="tab-content" id="nav-tabContent">
-                                                <div
-                                                    class="tab-pane fade content"
-                                                    id="nav-profile"
-                                                    role="tabpanel"
-                                                    aria-labelledby="nav-profile-tab"
-                                                    tabindex="0"
-                                                >
-                                                    <span>
-                                                        Name
-                                                        <div class="animated-word">
-                                                            <div class="letter">E</div>
-                                                            <div class="letter">L</div>
-                                                            <div class="letter">V</div>
-                                                            <div class="letter">I</div>
-                                                            <div class="letter">S</div>
-                                                            <div class="letter">&nbsp;</div>
-                                                            <div class="letter">M</div>
-                                                            <div class="letter">u</div>
-                                                            <div class="letter">g</div>
-                                                            <div class="letter">i</div>
-                                                            <div class="letter">s</div>
-                                                            <div class="letter">h</div>
-                                                            <div class="letter">a</div>
-                                                        </div>
-                                                    </span>
-                                                    <div class="profile-p">
-                                                        <span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <nav>
+                                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                        <button
+                                                            class="nav-link"
+                                                            id="nav-profile-tab"
+                                                            data-bs-toggle="tab"
+                                                            data-bs-target="#nav-profile"
+                                                            type="button"
+                                                            role="tab"
+                                                            aria-controls="nav-profile"
+                                                            aria-selected="false"
+                                                        >
                                                             Profile
-                                                            <div class="animated-word">
-                                                                Software developer
-                                                            </div>
-                                                        </span>
+                                                        </button>
+                                                        <button
+                                                            class="nav-link active"
+                                                            id="nav-skills-tab"
+                                                            data-bs-toggle="tab"
+                                                            data-bs-target="#nav-skills"
+                                                            type="button"
+                                                            role="tab"
+                                                            aria-controls="nav-skills"
+                                                            aria-selected="true"
+                                                        >
+                                                            Skills
+                                                        </button>
+                                                        <button
+                                                            class="nav-link"
+                                                            id="nav-education-tab"
+                                                            data-bs-toggle="tab"
+                                                            data-bs-target="#nav-education"
+                                                            type="button"
+                                                            role="tab"
+                                                            aria-controls="nav-education"
+                                                            aria-selected="false"
+                                                        >
+                                                            Education
+                                                        </button>
+                                                        <button
+                                                            class="nav-link"
+                                                            id="nav-hobbies-tab"
+                                                            data-bs-toggle="tab"
+                                                            data-bs-target="#nav-hobbies"
+                                                            type="button"
+                                                            role="tab"
+                                                            aria-controls="nav-hobbies"
+                                                            aria-selected="false"
+                                                        >
+                                                            Interested
+                                                        </button>
                                                     </div>
-                                                    <div class="profile-p">
+                                                </nav>
+                                                <div class="tab-content" id="nav-tabContent">
+                                                    <div
+                                                        class="tab-pane fade content"
+                                                        id="nav-profile"
+                                                        role="tabpanel"
+                                                        aria-labelledby="nav-profile-tab"
+                                                        tabindex="0"
+                                                    >
                                                         <span>
-                                                            E-mail
+                                                            Name
                                                             <div class="animated-word">
-                                                                mugishaelvis104@gmail.com
+                                                                <div class="letter">E</div>
+                                                                <div class="letter">L</div>
+                                                                <div class="letter">V</div>
+                                                                <div class="letter">I</div>
+                                                                <div class="letter">S</div>
+                                                                <div class="letter">&nbsp;</div>
+                                                                <div class="letter">M</div>
+                                                                <div class="letter">u</div>
+                                                                <div class="letter">g</div>
+                                                                <div class="letter">i</div>
+                                                                <div class="letter">s</div>
+                                                                <div class="letter">h</div>
+                                                                <div class="letter">a</div>
                                                             </div>
                                                         </span>
-                                                    </div>
-                                                    <div class="profile-p">
-                                                        <span>
-                                                            Contact
-                                                            <div class="animated-word">
-                                                                +250 7805 279 73
-                                                            </div>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="tab-pane fade show active"
-                                                    id="nav-skills"
-                                                    role="tabpanel"
-                                                    aria-labelledby="nav-skills-tab"
-                                                    tabindex="0"
-                                                >
-                                                    <div class="skills">
-                                                        <div class="skill">
-                                                            <p>Python</p>
+                                                        <div class="profile-p">
+                                                            <span>
+                                                                Profile
+                                                                <div class="animated-word">
+                                                                    Software developer
+                                                                </div>
+                                                            </span>
                                                         </div>
-                                                        <div class="skill">
-                                                            <p>Java</p>
+                                                        <div class="profile-p">
+                                                            <span>
+                                                                E-mail
+                                                                <div class="animated-word">
+                                                                    mugishaelvis104@gmail.com
+                                                                </div>
+                                                            </span>
                                                         </div>
-                                                        <div class="skill">
-                                                            <p>Django</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>Spring Boot</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>REST APIs</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>Bootstrap</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>MySQL</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>AWS</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>Angular</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>Flutter</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>GitHub</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>Bubble.io</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>Glide App</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>JavaScript</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>Rest Services</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>HTML</p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>CSS</p>
+                                                        <div class="profile-p">
+                                                            <span>
+                                                                Contact
+                                                                <div class="animated-word">
+                                                                    +250 7805 279 73
+                                                                </div>
+                                                            </span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div
-                                                    class="tab-pane fade"
-                                                    id="nav-education"
-                                                    role="tabpanel"
-                                                    aria-labelledby="nav-education-tab"
-                                                    tabindex="0"
-                                                >
-                                                    <div class="overflow-auto1">
-                                                        <div class="educations">
-                                                            <div class="education">
-                                                                <h1>Bachelor of science</h1>
-                                                                <p>
-                                                                    Software engineering -
-                                                                    <span>INES Ruhengeri</span>
-                                                                </p>
-                                                                <p class="calendar">
-                                                                    <i class="fa-regular fa-calendar-days"></i>
-                                                                    Sept 2018 - March 2022
-                                                                </p>
+                                                    <div
+                                                        class="tab-pane fade show active"
+                                                        id="nav-skills"
+                                                        role="tabpanel"
+                                                        aria-labelledby="nav-skills-tab"
+                                                        tabindex="0"
+                                                    >
+                                                        <div class="skills">
+                                                            <div class="skill">
+                                                                <p>Python</p>
                                                             </div>
-                                                            <br>
-                                                            <div class="education">
-                                                                <h1>Innov8 Java Training</h1>
-                                                                <p>
-                                                                    Basic and advanced Java -
-                                                                    <span>INNOV8POD</span>
-                                                                </p>
-                                                                <p class="calendar">
-                                                                    <i class="fa-regular fa-calendar-days"></i>
-                                                                    Sept 2022 - Nov 2022
-                                                                </p>
+                                                            <div class="skill">
+                                                                <p>Java</p>
                                                             </div>
-                                                            <br>
-                                                            <div class="education">
-                                                                <h1>Agile methodologies</h1>
-                                                                <p>
-                                                                    Agile way of working -
-                                                                    <span>INNOV8POD</span>
-                                                                </p>
-                                                                <p class="calendar">
-                                                                    <i class="fa-regular fa-calendar-days"></i>
-                                                                    Feb 2022 - April 2022
-                                                                </p>
+                                                            <div class="skill">
+                                                                <p>Django</p>
                                                             </div>
-                                                            <br>
-                                                            <div class="education">
-                                                                <h1>Agile methodologies</h1>
-                                                                <p>
-                                                                    Agile way of working -
-                                                                    <span>INNOV8POD</span>
-                                                                </p>
-                                                                <p class="calendar">
-                                                                    <i class="fa-regular fa-calendar-days"></i>
-                                                                    Feb 2022 - April 2022
-                                                                </p>
+                                                            <div class="skill">
+                                                                <p>Spring Boot</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>REST APIs</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>Bootstrap</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>MySQL</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>AWS</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>Angular</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>Flutter</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>GitHub</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>Bubble.io</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>Glide App</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>JavaScript</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>Rest Services</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>HTML</p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>CSS</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div
-                                                    class="tab-pane fade"
-                                                    id="nav-hobbies"
-                                                    role="tabpanel"
-                                                    aria-labelledby="nav-hobbies-tab"
-                                                    tabindex="0"
-                                                >
-                                                    <div class="skills">
-                                                        <div class="skill">
-                                                            <p>
-                                                                <i class="fa-solid fa-chalkboard-user"></i>
-                                                                Learning
-                                                            </p>
+                                                    <div
+                                                        class="tab-pane fade"
+                                                        id="nav-education"
+                                                        role="tabpanel"
+                                                        aria-labelledby="nav-education-tab"
+                                                        tabindex="0"
+                                                    >
+                                                        <div class="overflow-auto1">
+                                                            <div class="educations">
+                                                                <div class="education">
+                                                                    <h1>Bachelor of science</h1>
+                                                                    <p>
+                                                                        Software engineering -
+                                                                        <span>INES Ruhengeri</span>
+                                                                    </p>
+                                                                    <p class="calendar">
+                                                                        <i class="fa-regular fa-calendar-days"></i>
+                                                                        Sept 2018 - March 2022
+                                                                    </p>
+                                                                </div>
+                                                                <br>
+                                                                <div class="education">
+                                                                    <h1>Innov8 Java Training</h1>
+                                                                    <p>
+                                                                        Basic and advanced Java -
+                                                                        <span>INNOV8POD</span>
+                                                                    </p>
+                                                                    <p class="calendar">
+                                                                        <i class="fa-regular fa-calendar-days"></i>
+                                                                        Sept 2022 - Nov 2022
+                                                                    </p>
+                                                                </div>
+                                                                <br>
+                                                                <div class="education">
+                                                                    <h1>Agile methodologies</h1>
+                                                                    <p>
+                                                                        Agile way of working -
+                                                                        <span>INNOV8POD</span>
+                                                                    </p>
+                                                                    <p class="calendar">
+                                                                        <i class="fa-regular fa-calendar-days"></i>
+                                                                        Feb 2022 - April 2022
+                                                                    </p>
+                                                                </div>
+                                                                <br>
+                                                                <div class="education">
+                                                                    <h1>Agile methodologies</h1>
+                                                                    <p>
+                                                                        Agile way of working -
+                                                                        <span>INNOV8POD</span>
+                                                                    </p>
+                                                                    <p class="calendar">
+                                                                        <i class="fa-regular fa-calendar-days"></i>
+                                                                        Feb 2022 - April 2022
+                                                                    </p>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="skill">
-                                                            <p>
-                                                                <i class="fa-solid fa-hands-praying"></i>
-                                                                Praying
-                                                            </p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>
-                                                                <i class="fa-solid fa-film"></i>
-                                                                Movies
-                                                            </p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>
-                                                                <i class="fa-solid fa-headphones"></i>
-                                                                Music
-                                                            </p>
-                                                        </div>
-                                                        <div class="skill">
-                                                            <p>
-                                                                <i class="fa-solid fa-terminal"></i>
-                                                                Coding
-                                                            </p>
+                                                    </div>
+                                                    <div
+                                                        class="tab-pane fade"
+                                                        id="nav-hobbies"
+                                                        role="tabpanel"
+                                                        aria-labelledby="nav-hobbies-tab"
+                                                        tabindex="0"
+                                                    >
+                                                        <div class="skills">
+                                                            <div class="skill">
+                                                                <p>
+                                                                    <i class="fa-solid fa-chalkboard-user"></i>
+                                                                    Learning
+                                                                </p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>
+                                                                    <i class="fa-solid fa-hands-praying"></i>
+                                                                    Praying
+                                                                </p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>
+                                                                    <i class="fa-solid fa-film"></i>
+                                                                    Movies
+                                                                </p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>
+                                                                    <i class="fa-solid fa-headphones"></i>
+                                                                    Music
+                                                                </p>
+                                                            </div>
+                                                            <div class="skill">
+                                                                <p>
+                                                                    <i class="fa-solid fa-terminal"></i>
+                                                                    Coding
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div
-                                    class="tab-pane fade"
-                                    id="v-pills-experience"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-experience-tab"
-                                    tabindex="0"
-                                >
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <div class="overflow-auto">
-                                                <div class="experiences">
-                                                    <div class="experience">
-                                                        <h1>Innov8POD -
-                                                            <span> Singapore</span>
-                                                        </h1>
-                                                        <p class="title">Software Developer</p>
-                                                        <p class="date">
-                                                            <i class="fa-regular fa-calendar-days"></i>
-                                                            <span>June 2022 - Present</span>
-                                                        </p>
-                                                        <div class="tasks">
-                                                            <ul>
-                                                                <li>
-                                                                    <p>
-                                                                        We work in Agile methodology to transform business ideas/problems by brainstorming
-                                    the
-                                    idea or problem into a solution based on client’s requirements and expectations
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>
-                                                                        Collaborated with cross-functional teams to design, develop, and maintain web and
-                                    mobile
-                                    applications using Python, Django, and Flutter, resulting in enhanced user
-                                    experiences and
-                                    increased customer satisfaction
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>
-                                                                        Integrated no-code platforms like Bubble.io and Glide Apps to rapidly build and
-                                    deploy
-                                    prototypes and MVPs for proof-of-concept initiatives
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>
-                                                                        Actively contributed to the organization's GitHub repositories, participating in
-                                    code reviews
-                                    and ensuring code quality and documentation standards were met
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <div class="experience">
-                                                        <h1>A.S.S Partners-ltd -
-                                                            <span> Kigali, Rwanda</span>
-                                                        </h1>
-                                                        <p class="title">Software Developer</p>
-                                                        <p class="date">
-                                                            <i class="fa-regular fa-calendar-days"></i>
-                                                            <span>Sept 2021 – Nov 2021</span>
-                                                        </p>
-                                                        <div class="tasks">
-                                                            <ul>
-                                                                <li>
-                                                                    <p>
-                                                                        Contributed in updating the ASS Partner's Database
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>
-                                                                        Testing functionality of the existing systems
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>
-                                                                        Contributed in developing a software API based application for Web, Android and IOS
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p>
-                                                                        Daily stand-up meeting
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="projects">
-                                                <h1 class="title">Projects</h1>
-                                                <hr style="color: #edbbba;">
+                                    <div
+                                        class="tab-pane fade"
+                                        id="v-pills-experience"
+                                        role="tabpanel"
+                                        aria-labelledby="v-pills-experience-tab"
+                                        tabindex="0"
+                                    >
+                                        <div class="row">
+                                            <div class="col-md-8">
                                                 <div class="overflow-auto">
-                                                    <div class="experience-projects">
-                                                        <div class="experience-pro">
+                                                    <div class="experiences">
+                                                        <div class="experience">
                                                             <h1>
-                                                                GreatCart -
-                                                                <span>
-                                                                    Oct 2022 - Nov 2022
-                                                                </span>
+                                                                Innov8POD -
+                                                                <span> Singapore</span>
                                                             </h1>
-                                                            <p class="project-category">e-commerce</p>
-                                                            <p class="project-skill">
-                                                                Front-end:
-                                                                <span>HTML</span>
-                                                                <span>CSS</span>
-                                                                <span>Bootstrap</span>
+                                                            <p class="title">Software Developer</p>
+                                                            <p class="date">
+                                                                <i class="fa-regular fa-calendar-days"></i>
+                                                                <span>June 2022 - Present</span>
                                                             </p>
-                                                            <p class="project-skill">
-                                                                Back-end:
-                                                                <span>Django</span>
-                                                                <span>SQLite</span>
-                                                            </p>
+                                                            <div class="tasks">
+                                                                <ul>
+                                                                    <li>
+                                                                        <p>
+                                                                            We work in Agile methodology to transform
+                                                                        business ideas/problems by brainstorming
+                                                                        the
+                                                                        idea or problem into a solution based on
+                                                                        client’s requirements and expectations
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            Collaborated with cross-functional teams to
+                                                                        design, develop, and maintain web and
+                                                                        mobile
+                                                                        applications using Python, Django, and Flutter,
+                                                                        resulting in enhanced user
+                                                                        experiences and
+                                                                        increased customer satisfaction
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            Integrated no-code platforms like Bubble.io and
+                                                                        Glide Apps to rapidly build and
+                                                                        deploy
+                                                                        prototypes and MVPs for proof-of-concept
+                                                                        initiatives
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            Actively contributed to the organization's
+                                                                        GitHub repositories, participating in
+                                                                        code reviews
+                                                                        and ensuring code quality and documentation
+                                                                        standards were met
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                        <div class="experience-pro">
+                                                        <br>
+                                                        <div class="experience">
                                                             <h1>
-                                                                AllinOne -
-                                                                <span> July 2023 - Aug 2023</span>
+                                                                A.S.S Partners-ltd -
+                                                                <span> Kigali, Rwanda</span>
                                                             </h1>
-                                                            <p class="project-category">e-commerce</p>
-                                                            <p class="project-skill">
-                                                                Front-end:
-                                                                <span>Angular</span>
-                                                                <span>TypeScript</span>
-                                                                <span>Bootstrap</span>
+                                                            <p class="title">Software Developer</p>
+                                                            <p class="date">
+                                                                <i class="fa-regular fa-calendar-days"></i>
+                                                                <span>Sept 2021 – Nov 2021</span>
                                                             </p>
-                                                            <p class="project-skill">
-                                                                Back-end:
-                                                                <span>Spring Boot</span>
-                                                                <span>MySQL</span>
-                                                                <span>REST APIs</span>
-                                                            </p>
+                                                            <div class="tasks">
+                                                                <ul>
+                                                                    <li>
+                                                                        <p>
+                                                                            Contributed in updating the ASS Partner's
+                                                                        Database
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            Testing functionality of the existing systems
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            Contributed in developing a software API based
+                                                                        application for Web, Android and IOS
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            Daily stand-up meeting
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                        <div class="experience-pro">
-                                                            <h1>
-                                                                VizionArchitects -
-                                                                <span> May 2022 - June 2022</span>
-                                                            </h1>
-                                                            <p class="project-category">Website</p>
-                                                            <p class="project-skill">
-                                                                Front-end:
-                                                                <span>HTML</span>
-                                                                <span>CSS</span>
-                                                                <span>Bootstrap</span>
-                                                                <span>JS</span>
-                                                            </p>
-                                                            <p class="project-skill">
-                                                                Back-end:
-                                                                <span>Django</span>
-                                                                <span>SQLite</span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="experience-pro">
-                                                            <h1>
-                                                                eTravelling -
-                                                                <span> Sept 2021 - Oct 2021</span>
-                                                            </h1>
-                                                            <p class="project-category">Web App</p>
-                                                            <p class="project-skill">
-                                                                Front-end:
-                                                                <span>HTML</span>
-                                                                <span>CSS</span>
-                                                                <span>Bootstrap</span>
-                                                            </p>
-                                                            <p class="project-skill">
-                                                                Back-end:
-                                                                <span>Django</span>
-                                                                <span>MySQL</span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="experience-pro">
-                                                            <h1>
-                                                                ParkingSpot -
-                                                                <span> Oct 2022 - Nov 2022</span>
-                                                            </h1>
-                                                            <p class="project-category">Web App</p>
-                                                            <p class="project-skill">
-                                                                Front-end:
-                                                                <span>HTML</span>
-                                                                <span>CSS</span>
-                                                                <span>Bootstrap</span>
-                                                            </p>
-                                                            <p class="project-skill">
-                                                                Back-end:
-                                                                <span>Django</span>
-                                                                <span>SQLite</span>
-                                                            </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="projects">
+                                                    <h1 class="title">Projects</h1>
+                                                    <hr style="color: #edbbba;">
+                                                    <div class="overflow-auto3">
+                                                        <div class="experience-projects">
+                                                            <div class="experience-pro">
+                                                                <h1>
+                                                                    GreatCart -
+                                                                    <span>
+                                                                        Oct 2022 - Nov 2022
+                                                                    </span>
+                                                                </h1>
+                                                                <p class="project-category">e-commerce</p>
+                                                                <p class="project-skill">
+                                                                    Front-end:
+                                                                    <span>HTML</span>
+                                                                    <span>CSS</span>
+                                                                    <span>Bootstrap</span>
+                                                                </p>
+                                                                <p class="project-skill">
+                                                                    Back-end:
+                                                                    <span>Django</span>
+                                                                    <span>SQLite</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="experience-pro">
+                                                                <h1>
+                                                                    AllinOne -
+                                                                    <span> July 2023 - Aug 2023</span>
+                                                                </h1>
+                                                                <p class="project-category">e-commerce</p>
+                                                                <p class="project-skill">
+                                                                    Front-end:
+                                                                    <span>Angular</span>
+                                                                    <span>TypeScript</span>
+                                                                    <span>Bootstrap</span>
+                                                                </p>
+                                                                <p class="project-skill">
+                                                                    Back-end:
+                                                                    <span>Spring Boot</span>
+                                                                    <span>MySQL</span>
+                                                                    <span>REST APIs</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="experience-pro">
+                                                                <h1>
+                                                                    VizionArchitects -
+                                                                    <span> May 2022 - June 2022</span>
+                                                                </h1>
+                                                                <p class="project-category">Website</p>
+                                                                <p class="project-skill">
+                                                                    Front-end:
+                                                                    <span>HTML</span>
+                                                                    <span>CSS</span>
+                                                                    <span>Bootstrap</span>
+                                                                    <span>JS</span>
+                                                                </p>
+                                                                <p class="project-skill">
+                                                                    Back-end:
+                                                                    <span>Django</span>
+                                                                    <span>SQLite</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="experience-pro">
+                                                                <h1>
+                                                                    eTravelling -
+                                                                    <span> Sept 2021 - Oct 2021</span>
+                                                                </h1>
+                                                                <p class="project-category">Web App</p>
+                                                                <p class="project-skill">
+                                                                    Front-end:
+                                                                    <span>HTML</span>
+                                                                    <span>CSS</span>
+                                                                    <span>Bootstrap</span>
+                                                                </p>
+                                                                <p class="project-skill">
+                                                                    Back-end:
+                                                                    <span>Django</span>
+                                                                    <span>MySQL</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="experience-pro">
+                                                                <h1>
+                                                                    ParkingSpot -
+                                                                    <span> Oct 2022 - Nov 2022</span>
+                                                                </h1>
+                                                                <p class="project-category">Web App</p>
+                                                                <p class="project-skill">
+                                                                    Front-end:
+                                                                    <span>HTML</span>
+                                                                    <span>CSS</span>
+                                                                    <span>Bootstrap</span>
+                                                                </p>
+                                                                <p class="project-skill">
+                                                                    Back-end:
+                                                                    <span>Django</span>
+                                                                    <span>SQLite</span>
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div
-                                    class="tab-pane fade"
-                                    id="v-pills-service"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-service-tab"
-                                    tabindex="0"
-                                >
-                                    <div class="row row-flip-card">
-                                        <div class="col-md-4">
-                                            <div class="card flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        <h1>Full-stack web development</h1>
-                                                    </div>
-                                                    <div class="flip-card-back">
-                                                        <p>
-                                                            Empowering businesses with end-to-end web solutions. From crafting
-                                                            captivating user interfaces to engineering powerful databases.
-                                                            I specialize in creating dynamic, full-stack websites that engage, perform, and deliver
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <div class="card flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front">
-                                                        <i class="fa-solid fa-mobile-screen"></i>
-                                                        <h1>Mobile app creation</h1>
-                                                    </div>
-                                                    <div class="flip-card-back">
-                                                        <p>
-                                                            Transforming concepts into interactive realities. I specialize in designing
-                                                            and developing mobile applications that seamlessly merge innovation and
-                                                            user-centered design, ensuring your ideas thrive in the palms of users' hands
-                                                        </p>
+                                    <div
+                                        class="tab-pane fade"
+                                        id="v-pills-service"
+                                        role="tabpanel"
+                                        aria-labelledby="v-pills-service-tab"
+                                        tabindex="0"
+                                    >
+                                        <div class="row row-flip-card">
+                                            <div class="col-md-4">
+                                                <div class="card flip-card">
+                                                    <div class="flip-card-inner">
+                                                        <div class="flip-card-front">
+                                                            <i class="fa-solid fa-desktop"></i>
+                                                            <h1>Full-stack web development</h1>
+                                                        </div>
+                                                        <div class="flip-card-back">
+                                                            <p>
+                                                                Empowering businesses with end-to-end web solutions. From
+                                                            crafting
+                                                            captivating user interfaces to engineering powerful
+                                                            databases.
+                                                            I specialize in creating dynamic, full-stack websites that
+                                                            engage, perform, and deliver
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <div class="card flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front">
-                                                        <i class="fa-brands fa-uncharted"></i>
-                                                        <h1>Custom software solutions</h1>
+                                            <div class="col-md-4">
+                                                <div class="card flip-card">
+                                                    <div class="flip-card-inner">
+                                                        <div class="flip-card-front">
+                                                            <i class="fa-solid fa-mobile-screen"></i>
+                                                            <h1>Mobile app creation</h1>
+                                                        </div>
+                                                        <div class="flip-card-back">
+                                                            <p>
+                                                                Transforming concepts into interactive realities. I
+                                                            specialize in designing
+                                                            and developing mobile applications that seamlessly merge
+                                                            innovation and
+                                                            user-centered design, ensuring your ideas thrive in the
+                                                            palms of users' hands
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <div class="flip-card-back">
-                                                        <p>
-                                                            Customized solutions for unique challenges. I excel at creating custom software
-                                                            applications that precisely align with your business needs, streamlining
-                                                            processes, boosting efficiency, and enabling you to reach your goals with
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card flip-card">
+                                                    <div class="flip-card-inner">
+                                                        <div class="flip-card-front">
+                                                            <i class="fa-brands fa-uncharted"></i>
+                                                            <h1>Custom software solutions</h1>
+                                                        </div>
+                                                        <div class="flip-card-back">
+                                                            <p>
+                                                                Customized solutions for unique challenges. I excel at
+                                                            creating custom software
+                                                            applications that precisely align with your business needs,
+                                                            streamlining
+                                                            processes, boosting efficiency, and enabling you to reach
+                                                            your goals with
                                                             precision
-                                                        </p>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <div class="card flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front">
-                                                        <i class="fa-solid fa-bug-slash"></i>
-                                                        <h1>Code debugging & Optimization</h1>
-                                                    </div>
-                                                    <div class="flip-card-back">
-                                                        <p>
-                                                            Unlocking the full potential of your code. With a keen eye for detail,
-                                                            I identify and eliminate bugs and inefficiencies, ensuring your software runs
-                                                            smoothly, performs optimally, and delivers a flawless user experience
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <div class="card flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front">
-                                                        <i class="fa-solid fa-tape"></i>
-                                                        <h1>API integration</h1>
-                                                    </div>
-                                                    <div class="flip-card-back">
-                                                        <p>
-                                                            Seamless connections for enhanced functionality. I excel at integrating APIs to create
-                                                            dynamic software ecosystems, enabling your applications to communicate effortlessly,
-                                                            access external services, and provide users with a richer experience
-                                                        </p>
+                                            <div class="col-md-4">
+                                                <div class="card flip-card">
+                                                    <div class="flip-card-inner">
+                                                        <div class="flip-card-front">
+                                                            <i class="fa-solid fa-bug-slash"></i>
+                                                            <h1>Code debugging & Optimization</h1>
+                                                        </div>
+                                                        <div class="flip-card-back">
+                                                            <p>
+                                                                Unlocking the full potential of your code. With a keen eye
+                                                            for detail,
+                                                            I identify and eliminate bugs and inefficiencies, ensuring
+                                                            your software runs
+                                                            smoothly, performs optimally, and delivers a flawless user
+                                                            experience
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <div class="card flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front">
-                                                        <i class="fa-solid fa-helmet-safety"></i>
-                                                        <h1>Technical consultations</h1>
+                                            <div class="col-md-4">
+                                                <div class="card flip-card">
+                                                    <div class="flip-card-inner">
+                                                        <div class="flip-card-front">
+                                                            <i class="fa-solid fa-tape"></i>
+                                                            <h1>API integration</h1>
+                                                        </div>
+                                                        <div class="flip-card-back">
+                                                            <p>
+                                                                Seamless connections for enhanced functionality. I excel at
+                                                            integrating APIs to create
+                                                            dynamic software ecosystems, enabling your applications to
+                                                            communicate effortlessly,
+                                                            access external services, and provide users with a richer
+                                                            experience
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <div class="flip-card-back">
-                                                        <p>
-                                                            Navigating complexities with expert insights. I offer personalized technical consultations
-                                                            to guide you through difficult software decisions, empowering you with the knowledge
-                                                            needed to make informed choices and achieve your digital objectives
-                                                        </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card flip-card">
+                                                    <div class="flip-card-inner">
+                                                        <div class="flip-card-front">
+                                                            <i class="fa-solid fa-helmet-safety"></i>
+                                                            <h1>Technical consultations</h1>
+                                                        </div>
+                                                        <div class="flip-card-back">
+                                                            <p>
+                                                                Navigating complexities with expert insights. I offer
+                                                            personalized technical consultations
+                                                            to guide you through difficult software decisions,
+                                                            empowering you with the knowledge
+                                                            needed to make informed choices and achieve your digital
+                                                            objectives
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div
-                                    class="tab-pane fade"
-                                    id="v-pills-messages"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-messages-tab"
-                                    tabindex="0"
-                                >
-                                    <p>
-                                        The Messages starting state of the menu will appear
-                    collapsed on smaller screens, and will appear
-                    non-collapsed on larger screens. When toggled using the
-                    button below, the menu will change.
-                                    </p>
-                                </div>
-                                <div
-                                    class="tab-pane fade"
-                                    id="v-pills-settings"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-settings-tab"
-                                    tabindex="0"
-                                >
-                                    <p>
-                                        The Settings starting state of the menu will appear
-                    collapsed on smaller screens, and will appear
-                    non-collapsed on larger screens. When toggled using the
-                    button below, the menu will change.
-                                    </p>
+                                    <div
+                                        class="tab-pane fade overflow-auto2"
+                                        id="v-pills-portfolio"
+                                        role="tabpanel"
+                                        aria-labelledby="v-pills-portfolio-tab"
+                                        tabindex="0"
+                                    >
+                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button
+                                                    class="nav-link active"
+                                                    id="pills-all-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#pills-all"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="pills-all"
+                                                    aria-selected="true"
+                                                >All</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button
+                                                    class="nav-link"
+                                                    id="pills-web-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#pills-web"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="pills-web"
+                                                    aria-selected="false"
+                                                >Web</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button
+                                                    class="nav-link"
+                                                    id="pills-mobile-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#pills-mobile"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="pills-mobile"
+                                                    aria-selected="false"
+                                                >Mobile</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div
+                                                class="tab-pane fade show active"
+                                                id="pills-all"
+                                                role="tabpanel"
+                                                aria-labelledby="pills-all-tab"
+                                                tabindex="0">
+                                                <div class="card-projects">
+                                                    <div class="row mb-4">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-dark">
+                                                                <div class="card-body p-8">
+                                                                    <p class="p-card-title">
+                                                                        Project Name
+                                                                        <span>Nov - 22 / 2023</span>
+                                                                    </p>
+                                                                    <img
+                                                                    class="project-img"
+                                                                    src="assets/img/mobile.png"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#project1"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="project1"
+                                                                    >
+                                                                    <p class="collapse p-descr" id="project1">
+                                                                        Seamless connections for enhanced functionality. I excel at
+                                                                        integrating APIs to create dynamic software ecosystems, enabling your applications to
+                                                                        communicate effortlessly, access external services, and provide users with a richer experience
+                                                                    </p>
+                                                                    <p class="project-links">
+                                                                        <a class="project-link" href="">
+                                                                            GitHub
+                                                                        </a>
+                                                                        <a class="project-link" href="">
+                                                                            Live
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-dark">
+                                                                <div class="card-body p-8">
+                                                                    <p class="p-card-title">
+                                                                        Project Name
+                                                                        <span>Nov - 22 / 2023</span>
+                                                                    </p>
+                                                                    <img
+                                                                    class="project-img"
+                                                                    src="assets/img/mobile.png"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#project2"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="project2"
+                                                                    >
+                                                                    <p class="collapse p-descr" id="project2">
+                                                                        Seamless connections for enhanced functionality. I excel at
+                                                                        integrating APIs to create dynamic software ecosystems, enabling your applications to
+                                                                        communicate effortlessly, access external services, and provide users with a richer experience
+                                                                    </p>
+                                                                    <p class="project-links">
+                                                                        <a class="project-link" href="">
+                                                                            GitHub
+                                                                        </a>
+                                                                        <a class="project-link" href="">
+                                                                            Live
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-dark">
+                                                                <div class="card-body p-8">
+                                                                    <p class="p-card-title">
+                                                                        Project Name
+                                                                        <span>Nov - 22 / 2023</span>
+                                                                    </p>
+                                                                    <img
+                                                                    class="project-img"
+                                                                    src="assets/img/mobile.png"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#project3"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="project3"
+                                                                    >
+                                                                    <p class="collapse p-descr" id="project3">
+                                                                        Seamless connections for enhanced functionality. I excel at
+                                                                        integrating APIs to create dynamic software ecosystems, enabling your applications to
+                                                                        communicate effortlessly, access external services, and provide users with a richer experience
+                                                                    </p>
+                                                                    <p class="project-links">
+                                                                        <a class="project-link" href="">
+                                                                            GitHub
+                                                                        </a>
+                                                                        <a class="project-link" href="">
+                                                                            Live
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-dark">
+                                                                <div class="card-body p-8">
+                                                                    <p class="p-card-title">
+                                                                        Project Name
+                                                                        <span>Nov - 22 / 2023</span>
+                                                                    </p>
+                                                                    <img
+                                                                    class="project-img"
+                                                                    src="assets/img/mobile.png"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#project4"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="project4"
+                                                                    >
+                                                                    <p class="collapse p-descr" id="project4">
+                                                                        Seamless connections for enhanced functionality. I excel at
+                                                                        integrating APIs to create dynamic software ecosystems, enabling your applications to
+                                                                        communicate effortlessly, access external services, and provide users with a richer experience
+                                                                    </p>
+                                                                    <p class="project-links">
+                                                                        <a class="project-link" href="">
+                                                                            GitHub
+                                                                        </a>
+                                                                        <a class="project-link" href="">
+                                                                            Live
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="tab-pane fade"
+                                                id="pills-web"
+                                                role="tabpanel"
+                                                aria-labelledby="pills-web-tab"
+                                                tabindex="0">
+
+                                                <div class="card-projects">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-dark">
+                                                                <div class="card-body p-8">
+                                                                    <p class="p-card-title">
+                                                                        Project Wep App1
+                                                                        <span>Nov - 22 / 2023</span>
+                                                                    </p>
+                                                                    <img
+                                                                    class="project-img"
+                                                                    src="assets/img/mobile.png"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#project1"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="project1"
+                                                                    >
+                                                                    <p class="collapse p-descr" id="project1">
+                                                                        Seamless connections for enhanced functionality. I excel at
+                                                                        integrating APIs to create dynamic software ecosystems, enabling your applications to
+                                                                        communicate effortlessly, access external services, and provide users with a richer experience
+                                                                    </p>
+                                                                    <p class="project-links">
+                                                                        <a class="project-link" href="">
+                                                                            GitHub
+                                                                        </a>
+                                                                        <a class="project-link" href="">
+                                                                            Live
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-dark">
+                                                                <div class="card-body p-8">
+                                                                    <p class="p-card-title">
+                                                                        Project Wep App2
+                                                                        <span>Nov - 22 / 2023</span>
+                                                                    </p>
+                                                                    <img
+                                                                    class="project-img"
+                                                                    src="assets/img/mobile.png"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#project2"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="project2"
+                                                                    >
+                                                                    <p class="collapse p-descr" id="project2">
+                                                                        Seamless connections for enhanced functionality. I excel at
+                                                                        integrating APIs to create dynamic software ecosystems, enabling your applications to
+                                                                        communicate effortlessly, access external services, and provide users with a richer experience
+                                                                    </p>
+                                                                    <p class="project-links">
+                                                                        <a class="project-link" href="">
+                                                                            GitHub
+                                                                        </a>
+                                                                        <a class="project-link" href="">
+                                                                            Live
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div
+                                                class="tab-pane fade"
+                                                id="pills-mobile"
+                                                role="tabpanel"
+                                                aria-labelledby="pills-mobile-tab"
+                                                tabindex="0">
+
+                                                <div class="card-projects">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-dark">
+                                                                <div class="card-body p-8">
+                                                                    <p class="p-card-title">
+                                                                        Project Mobile App1
+                                                                        <span>Nov - 22 / 2023</span>
+                                                                    </p>
+                                                                    <img
+                                                                    class="project-img"
+                                                                    src="assets/img/mobile.png"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#project1"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="project1"
+                                                                    >
+                                                                    <p class="collapse p-descr" id="project1">
+                                                                        Seamless connections for enhanced functionality. I excel at
+                                                                        integrating APIs to create dynamic software ecosystems, enabling your applications to
+                                                                        communicate effortlessly, access external services, and provide users with a richer experience
+                                                                    </p>
+                                                                    <p class="project-links">
+                                                                        <a class="project-link" href="">
+                                                                            GitHub
+                                                                        </a>
+                                                                        <a class="project-link" href="">
+                                                                            Live
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-dark">
+                                                                <div class="card-body p-8">
+                                                                    <p class="p-card-title">
+                                                                        Project Mobile App2
+                                                                        <span>Nov - 22 / 2023</span>
+                                                                    </p>
+                                                                    <img
+                                                                    class="project-img"
+                                                                    src="assets/img/mobile.png"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#project2"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="project2"
+                                                                    >
+                                                                    <p class="collapse p-descr" id="project2">
+                                                                        Seamless connections for enhanced functionality. I excel at
+                                                                        integrating APIs to create dynamic software ecosystems, enabling your applications to
+                                                                        communicate effortlessly, access external services, and provide users with a richer experience
+                                                                    </p>
+                                                                    <p class="project-links">
+                                                                        <a class="project-link" href="">
+                                                                            GitHub
+                                                                        </a>
+                                                                        <a class="project-link" href="">
+                                                                            Live
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-dark">
+                                                                <div class="card-body p-8">
+                                                                    <p class="p-card-title">
+                                                                        Project Mobile App3
+                                                                        <span>Nov - 22 / 2023</span>
+                                                                    </p>
+                                                                    <img
+                                                                    class="project-img"
+                                                                    src="assets/img/mobile.png"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#project3"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="project3"
+                                                                    >
+                                                                    <p class="collapse p-descr" id="project3">
+                                                                        Seamless connections for enhanced functionality. I excel at
+                                                                        integrating APIs to create dynamic software ecosystems, enabling your applications to
+                                                                        communicate effortlessly, access external services, and provide users with a richer experience
+                                                                    </p>
+                                                                    <p class="project-links">
+                                                                        <a class="project-link" href="">
+                                                                            GitHub
+                                                                        </a>
+                                                                        <a class="project-link" href="">
+                                                                            Live
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade"
+                                        id="v-pills-settings"
+                                        role="tabpanel"
+                                        aria-labelledby="v-pills-settings-tab"
+                                        tabindex="0"
+                                    >
+                                        <p>
+                                            The Settings starting state of the menu will appear
+                                        collapsed on smaller screens, and will appear
+                                        non-collapsed on larger screens. When toggled using the
+                                        button below, the menu will change.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
