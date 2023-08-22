@@ -28,6 +28,7 @@ const words = [
   "Web developer",
   "Front-end developer",
   "Back-end developer",
+  "Freelancer",
 ];
 
 const delay = {
