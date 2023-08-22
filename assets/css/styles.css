@@ -11726,15 +11726,15 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   position: absolute;
 } */
 
-.social-icon-list ul li .titulo {
-  /* color: #fff; */
-  /* font-size: 1.3em !important; */
-  /* text-transform: uppercase; */
-  /* letter-spacing: 0.1em; */
-  /* transform: scale(0); */
-  /* transition: 0.5s; */
-  /* transition-delay: 0s; */
-}
+/* .social-icon-list ul li .titulo {
+  color: #fff;
+  font-size: 1.3em !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+} */
 
 /* .social-icon-list ul li a:hover .titulo {
   transform: scale(1);
